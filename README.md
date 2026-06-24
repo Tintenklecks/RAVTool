@@ -1,5 +1,7 @@
 # JobRoom Helper
 
+Sprachen: Deutsch | [English](readme.en.md) | [Français](readme.fr.md) | [Italiano](readme.it.md)
+
 JobRoom Helper ist eine Browser-Erweiterung fuer einen manuellen LinkedIn-zu-Job-Room-Workflow. Sie hilft dabei, Angaben aus einer LinkedIn-Stellenanzeige zu uebernehmen und anschliessend in die Job-Room-Maske fuer Arbeitsbemuehungen einzutragen.
 
 Das Tool liest keine Bewerbungen automatisch aus, bewirbt sich nicht selbststaendig und sendet keine Formulare ab. Es speichert nur den zuletzt ausgelesenen Job lokal in der Browser-Erweiterung.

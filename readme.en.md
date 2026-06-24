@@ -1,5 +1,7 @@
 # JobRoom Helper
 
+[Deutsch](README.md) | English | [Français](readme.fr.md) | [Italiano](readme.it.md)
+
 JobRoom Helper is a browser extension for a manual LinkedIn-to-Job-Room workflow. It helps copy details from a LinkedIn job posting and paste them into the Job-Room work-effort form.
 
 The tool does not apply for jobs, does not submit forms automatically, and does not send your data to a separate backend. It only stores the most recently read job locally inside the browser extension.

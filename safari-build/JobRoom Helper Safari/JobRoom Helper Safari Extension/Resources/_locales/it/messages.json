@@ -1,0 +1,57 @@
+{
+  "extName": {
+    "message": "Assistente JobRoom"
+  },
+  "extDescription": {
+    "message": "Legge un annuncio LinkedIn e incolla i dettagli nei campi Job-Room senza inviare il modulo."
+  },
+  "readLinkedInJob": {
+    "message": "Leggi offerta LinkedIn"
+  },
+  "pasteJobRoom": {
+    "message": "Incolla in Job-Room"
+  },
+  "clearData": {
+    "message": "Cancella dati"
+  },
+  "storedJob": {
+    "message": "Offerta salvata"
+  },
+  "versionLoading": {
+    "message": "Caricamento versione..."
+  },
+  "extensionVersion": {
+    "message": "Estensione v$VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "extensionContentVersion": {
+    "message": "Estensione v$EXTENSION_VERSION$ / contenuto v$CONTENT_VERSION$",
+    "placeholders": {
+      "extension_version": {
+        "content": "$1"
+      },
+      "content_version": {
+        "content": "$2"
+      }
+    }
+  },
+  "noLocalJobData": {
+    "message": "Nessun dato locale dell’offerta disponibile."
+  },
+  "instructionLinkedIn": {
+    "message": "1. Vai alla pagina di dettaglio dell’offerta in LinkedIn."
+  },
+  "instructionRead": {
+    "message": "2. Fai clic su Leggi offerta LinkedIn."
+  },
+  "instructionJobRoom": {
+    "message": "3. Vai alla pagina Job-Room."
+  },
+  "instructionPaste": {
+    "message": "4. Fai clic su Incolla in Job-Room."
+  }
+}

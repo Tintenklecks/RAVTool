@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JobRoom Helper</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <div id="languageSwitcher" class="language-switcher" aria-label="Language">
+        <button class="language-button" type="button" data-language="en">EN</button>
+        <button class="language-button" type="button" data-language="de">DE</button>
+        <button class="language-button" type="button" data-language="fr">FR</button>
+        <button class="language-button" type="button" data-language="it">IT</button>
+      </div>
+      <div class="actions">
+        <button id="read" type="button">READ LinkedIn job</button>
+        <button id="paste" type="button">PASTE into Job-Room</button>
+      </div>
+      <div id="version" class="version">Version loading...</div>
+      <section id="jobSummary" class="job-summary" hidden>
+        <div>
+          <div id="storedJobLabel" class="summary-label">Stored job</div>
+          <div id="jobTitle" class="job-title"></div>
+          <div id="jobCompany" class="job-company"></div>
+        </div>
+        <button id="clearData" class="clear-button" type="button">Clear data</button>
+      </section>
+      <pre id="status" aria-live="polite">Ready.</pre>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

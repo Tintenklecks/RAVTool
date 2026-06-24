@@ -1,0 +1,57 @@
+{
+  "extName": {
+    "message": "JobRoom Helper"
+  },
+  "extDescription": {
+    "message": "Read a LinkedIn job page and paste the job details into Job-Room fields without submitting."
+  },
+  "readLinkedInJob": {
+    "message": "READ LinkedIn job"
+  },
+  "pasteJobRoom": {
+    "message": "PASTE into Job-Room"
+  },
+  "clearData": {
+    "message": "Clear data"
+  },
+  "storedJob": {
+    "message": "Stored job"
+  },
+  "versionLoading": {
+    "message": "Version loading..."
+  },
+  "extensionVersion": {
+    "message": "Extension v$VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "extensionContentVersion": {
+    "message": "Extension v$EXTENSION_VERSION$ / content v$CONTENT_VERSION$",
+    "placeholders": {
+      "extension_version": {
+        "content": "$1"
+      },
+      "content_version": {
+        "content": "$2"
+      }
+    }
+  },
+  "noLocalJobData": {
+    "message": "No local job data yet."
+  },
+  "instructionLinkedIn": {
+    "message": "1. Go to the job detail page in LinkedIn."
+  },
+  "instructionRead": {
+    "message": "2. Click READ LinkedIn job."
+  },
+  "instructionJobRoom": {
+    "message": "3. Go to the Job-Room page."
+  },
+  "instructionPaste": {
+    "message": "4. Click PASTE into Job-Room."
+  }
+}

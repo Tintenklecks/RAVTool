@@ -1,0 +1,57 @@
+{
+  "extName": {
+    "message": "JobRoom Helfer"
+  },
+  "extDescription": {
+    "message": "Liest eine LinkedIn-Stellenanzeige und fügt die Daten in Job-Room-Felder ein, ohne das Formular abzusenden."
+  },
+  "readLinkedInJob": {
+    "message": "LinkedIn-Stelle lesen"
+  },
+  "pasteJobRoom": {
+    "message": "In Job-Room einfügen"
+  },
+  "clearData": {
+    "message": "Daten löschen"
+  },
+  "storedJob": {
+    "message": "Gespeicherte Stelle"
+  },
+  "versionLoading": {
+    "message": "Version wird geladen..."
+  },
+  "extensionVersion": {
+    "message": "Erweiterung v$VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "extensionContentVersion": {
+    "message": "Erweiterung v$EXTENSION_VERSION$ / Inhalt v$CONTENT_VERSION$",
+    "placeholders": {
+      "extension_version": {
+        "content": "$1"
+      },
+      "content_version": {
+        "content": "$2"
+      }
+    }
+  },
+  "noLocalJobData": {
+    "message": "Noch keine lokalen Stellendaten vorhanden."
+  },
+  "instructionLinkedIn": {
+    "message": "1. Gehen Sie zur Stellen-Detailseite in LinkedIn."
+  },
+  "instructionRead": {
+    "message": "2. Klicken Sie auf LinkedIn-Stelle lesen."
+  },
+  "instructionJobRoom": {
+    "message": "3. Gehen Sie zur Job-Room-Seite."
+  },
+  "instructionPaste": {
+    "message": "4. Klicken Sie auf In Job-Room einfügen."
+  }
+}

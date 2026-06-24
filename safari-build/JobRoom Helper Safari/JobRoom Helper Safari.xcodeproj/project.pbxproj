@@ -1,0 +1,1400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82502E872FE016800039048A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82502E862FE016800039048A /* AppDelegate.swift */; };
+		82502E8B2FE016800039048A /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 82502E892FE016800039048A /* Main.html */; };
+		82502E8D2FE016800039048A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 82502E8C2FE016800039048A /* Icon.png */; };
+		82502E8F2FE016800039048A /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 82502E8E2FE016800039048A /* Style.css */; };
+		82502E912FE016800039048A /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 82502E902FE016800039048A /* Script.js */; };
+		82502E932FE016800039048A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82502E922FE016800039048A /* ViewController.swift */; };
+		82502E962FE016800039048A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82502E942FE016800039048A /* Main.storyboard */; };
+		82502E982FE016810039048A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82502E972FE016810039048A /* Assets.xcassets */; };
+		82502E9F2FE016810039048A /* JobRoom Helper Safari Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 82502E9E2FE016810039048A /* JobRoom Helper Safari Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		82502EA42FE016810039048A /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82502EA32FE016810039048A /* SafariWebExtensionHandler.swift */; };
+		82502EB62FE016820039048A /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 82502EB02FE016820039048A /* popup.js */; };
+		82502EB72FE016820039048A /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 82502EB12FE016820039048A /* popup.html */; };
+		82502EB82FE016820039048A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 82502EB22FE016820039048A /* README.md */; };
+		82502EB92FE016820039048A /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 82502EB32FE016820039048A /* manifest.json */; };
+		82502EBA2FE016820039048A /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 82502EB42FE016820039048A /* popup.css */; };
+		82502EBB2FE016820039048A /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 82502EB52FE016820039048A /* content.js */; };
+		82502EC02FE016820039048A /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 82502EC12FE016820039048A /* icons */; };
+		82502EC22FE016820039048A /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 82502EC32FE016820039048A /* _locales */; };
+		8279E35E2FE096D2003FD614 /* Jobroom Helper Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8279E35D2FE096D2003FD614 /* Jobroom Helper Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8279E3682FE096D2003FD614 /* Jobroom Helper Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8279E3672FE096D2003FD614 /* Jobroom Helper Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8279E3F42FE09962003FD614 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 82502EB02FE016820039048A /* popup.js */; };
+		8279E3F52FE09962003FD614 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 82502EB32FE016820039048A /* manifest.json */; };
+		8279E3F62FE09962003FD614 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 82502EB42FE016820039048A /* popup.css */; };
+		8279E3F72FE09962003FD614 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 82502EB22FE016820039048A /* README.md */; };
+		8279E3F82FE09962003FD614 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 82502EB12FE016820039048A /* popup.html */; };
+		8279E3F92FE09962003FD614 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 82502EB52FE016820039048A /* content.js */; };
+		8279E3FA2FE09962003FD614 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 82502EB02FE016820039048A /* popup.js */; };
+		8279E3FB2FE09962003FD614 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 82502EB32FE016820039048A /* manifest.json */; };
+		8279E3FC2FE09962003FD614 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 82502EB42FE016820039048A /* popup.css */; };
+		8279E3FD2FE09962003FD614 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 82502EB22FE016820039048A /* README.md */; };
+		8279E3FE2FE09962003FD614 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 82502EB12FE016820039048A /* popup.html */; };
+		8279E3FF2FE09962003FD614 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 82502EB52FE016820039048A /* content.js */; };
+		8279E4002FE09962003FD614 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 82502EC12FE016820039048A /* icons */; };
+		8279E4012FE09962003FD614 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 82502EC32FE016820039048A /* _locales */; };
+		8279E4022FE09962003FD614 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 82502EC12FE016820039048A /* icons */; };
+		8279E4032FE09962003FD614 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 82502EC32FE016820039048A /* _locales */; };
+		8279E4072FE09962003FD614 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82502EA32FE016810039048A /* SafariWebExtensionHandler.swift */; };
+		8279E4082FE09962003FD614 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82502EA32FE016810039048A /* SafariWebExtensionHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82502EA02FE016810039048A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82502E7B2FE016800039048A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82502E9D2FE016810039048A;
+			remoteInfo = "JobRoom Helper Safari Extension";
+		};
+		8279E35F2FE096D2003FD614 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82502E7B2FE016800039048A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8279E35C2FE096D2003FD614;
+			remoteInfo = "Jobroom Helper Extension (iOS)";
+		};
+		8279E3692FE096D2003FD614 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82502E7B2FE016800039048A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8279E3662FE096D2003FD614;
+			remoteInfo = "Jobroom Helper Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		82502EAB2FE016810039048A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				82502E9F2FE016810039048A /* JobRoom Helper Safari Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8279E3902FE096D2003FD614 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8279E35E2FE096D2003FD614 /* Jobroom Helper Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8279E39A2FE096D2003FD614 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8279E3682FE096D2003FD614 /* Jobroom Helper Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		82502E832FE016800039048A /* JobRoom Helper Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JobRoom Helper Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82502E862FE016800039048A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		82502E8A2FE016800039048A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		82502E8C2FE016800039048A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		82502E8E2FE016800039048A /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		82502E902FE016800039048A /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		82502E922FE016800039048A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		82502E952FE016800039048A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		82502E972FE016810039048A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82502E992FE016810039048A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82502E9E2FE016810039048A /* JobRoom Helper Safari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "JobRoom Helper Safari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82502EA32FE016810039048A /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		82502EA52FE016810039048A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82502EB02FE016820039048A /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = Resources/popup.js; sourceTree = "<group>"; };
+		82502EB12FE016820039048A /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = Resources/popup.html; sourceTree = "<group>"; };
+		82502EB22FE016820039048A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Resources/README.md; sourceTree = "<group>"; };
+		82502EB32FE016820039048A /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		82502EB42FE016820039048A /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = popup.css; path = Resources/popup.css; sourceTree = "<group>"; };
+		82502EB52FE016820039048A /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = Resources/content.js; sourceTree = "<group>"; };
+		82502EC12FE016820039048A /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = Resources/icons; sourceTree = "<group>"; };
+		82502EC32FE016820039048A /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = Resources/_locales; sourceTree = "<group>"; };
+		8279E3412FE096D2003FD614 /* Jobroom Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jobroom Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8279E3522FE096D2003FD614 /* Jobroom Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jobroom Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8279E35D2FE096D2003FD614 /* Jobroom Helper Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Jobroom Helper Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8279E3672FE096D2003FD614 /* Jobroom Helper Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Jobroom Helper Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8279E38F2FE096D2003FD614 /* Exceptions for "iOS (Extension)" folder in "Jobroom Helper Extension (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8279E35C2FE096D2003FD614 /* Jobroom Helper Extension (iOS) */;
+		};
+		8279E3942FE096D2003FD614 /* Exceptions for "iOS (App)" folder in "Jobroom Helper (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8279E3402FE096D2003FD614 /* Jobroom Helper (iOS) */;
+		};
+		8279E4042FE09962003FD614 /* Exceptions for "macOS (Extension)" folder in "Jobroom Helper Extension (macOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8279E3662FE096D2003FD614 /* Jobroom Helper Extension (macOS) */;
+		};
+		8279E4052FE09962003FD614 /* Exceptions for "Shared (App)" folder in "Jobroom Helper (iOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = 8279E3402FE096D2003FD614 /* Jobroom Helper (iOS) */;
+		};
+		8279E4062FE09962003FD614 /* Exceptions for "Shared (App)" folder in "Jobroom Helper (macOS)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+			);
+			target = 8279E3512FE096D2003FD614 /* Jobroom Helper (macOS) */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8279E3422FE096D2003FD614 /* iOS (App) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8279E3942FE096D2003FD614 /* Exceptions for "iOS (App)" folder in "Jobroom Helper (iOS)" target */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		8279E3532FE096D2003FD614 /* macOS (App) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		8279E3612FE096D2003FD614 /* iOS (Extension) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8279E38F2FE096D2003FD614 /* Exceptions for "iOS (Extension)" folder in "Jobroom Helper Extension (iOS)" target */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		8279E36B2FE096D2003FD614 /* macOS (Extension) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8279E4042FE09962003FD614 /* Exceptions for "macOS (Extension)" folder in "Jobroom Helper Extension (macOS)" target */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		8279E3BF2FE09847003FD614 /* Shared (App) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8279E4052FE09962003FD614 /* Exceptions for "Shared (App)" folder in "Jobroom Helper (iOS)" target */,
+				8279E4062FE09962003FD614 /* Exceptions for "Shared (App)" folder in "Jobroom Helper (macOS)" target */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82502E802FE016800039048A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82502E9B2FE016810039048A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8279E33E2FE096D2003FD614 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8279E34F2FE096D2003FD614 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8279E35A2FE096D2003FD614 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8279E3642FE096D2003FD614 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82502E7A2FE016800039048A = {
+			isa = PBXGroup;
+			children = (
+				82502E852FE016800039048A /* JobRoom Helper Safari */,
+				82502EA22FE016810039048A /* JobRoom Helper Safari Extension */,
+				8279E3422FE096D2003FD614 /* iOS (App) */,
+				8279E3532FE096D2003FD614 /* macOS (App) */,
+				8279E3BF2FE09847003FD614 /* Shared (App) */,
+				8279E3612FE096D2003FD614 /* iOS (Extension) */,
+				8279E36B2FE096D2003FD614 /* macOS (Extension) */,
+				82502E842FE016800039048A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82502E842FE016800039048A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82502E832FE016800039048A /* JobRoom Helper Safari.app */,
+				82502E9E2FE016810039048A /* JobRoom Helper Safari Extension.appex */,
+				8279E3412FE096D2003FD614 /* Jobroom Helper.app */,
+				8279E3522FE096D2003FD614 /* Jobroom Helper.app */,
+				8279E35D2FE096D2003FD614 /* Jobroom Helper Extension.appex */,
+				8279E3672FE096D2003FD614 /* Jobroom Helper Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82502E852FE016800039048A /* JobRoom Helper Safari */ = {
+			isa = PBXGroup;
+			children = (
+				82502E862FE016800039048A /* AppDelegate.swift */,
+				82502E922FE016800039048A /* ViewController.swift */,
+				82502E942FE016800039048A /* Main.storyboard */,
+				82502E972FE016810039048A /* Assets.xcassets */,
+				82502E992FE016810039048A /* Info.plist */,
+				82502E882FE016800039048A /* Resources */,
+			);
+			path = "JobRoom Helper Safari";
+			sourceTree = "<group>";
+		};
+		82502E882FE016800039048A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82502E892FE016800039048A /* Main.html */,
+				82502E8C2FE016800039048A /* Icon.png */,
+				82502E8E2FE016800039048A /* Style.css */,
+				82502E902FE016800039048A /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		82502EA22FE016810039048A /* JobRoom Helper Safari Extension */ = {
+			isa = PBXGroup;
+			children = (
+				82502EAF2FE016820039048A /* Resources */,
+				82502EA32FE016810039048A /* SafariWebExtensionHandler.swift */,
+				82502EA52FE016810039048A /* Info.plist */,
+			);
+			path = "JobRoom Helper Safari Extension";
+			sourceTree = "<group>";
+		};
+		82502EAF2FE016820039048A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82502EB02FE016820039048A /* popup.js */,
+				82502EB12FE016820039048A /* popup.html */,
+				82502EB22FE016820039048A /* README.md */,
+				82502EB32FE016820039048A /* manifest.json */,
+				82502EB42FE016820039048A /* popup.css */,
+				82502EB52FE016820039048A /* content.js */,
+				82502EC12FE016820039048A /* icons */,
+				82502EC32FE016820039048A /* _locales */,
+			);
+			name = Resources;
+			path = "JobRoom Helper Safari Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82502E822FE016800039048A /* JobRoom Helper Safari */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82502EAC2FE016810039048A /* Build configuration list for PBXNativeTarget "JobRoom Helper Safari" */;
+			buildPhases = (
+				82502E7F2FE016800039048A /* Sources */,
+				82502E802FE016800039048A /* Frameworks */,
+				82502E812FE016800039048A /* Resources */,
+				82502EAB2FE016810039048A /* Embed Foundation Extensions */,
+				82502EBD2FE016820039048A /* Clear App Extended Attributes */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82502EA12FE016810039048A /* PBXTargetDependency */,
+			);
+			name = "JobRoom Helper Safari";
+			packageProductDependencies = (
+			);
+			productName = "JobRoom Helper Safari";
+			productReference = 82502E832FE016800039048A /* JobRoom Helper Safari.app */;
+			productType = "com.apple.product-type.application";
+		};
+		82502E9D2FE016810039048A /* JobRoom Helper Safari Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82502EA82FE016810039048A /* Build configuration list for PBXNativeTarget "JobRoom Helper Safari Extension" */;
+			buildPhases = (
+				82502E9A2FE016810039048A /* Sources */,
+				82502E9B2FE016810039048A /* Frameworks */,
+				82502E9C2FE016810039048A /* Resources */,
+				82502EBC2FE016820039048A /* Clear Extended Attributes */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JobRoom Helper Safari Extension";
+			packageProductDependencies = (
+			);
+			productName = "JobRoom Helper Safari Extension";
+			productReference = 82502E9E2FE016810039048A /* JobRoom Helper Safari Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8279E3402FE096D2003FD614 /* Jobroom Helper (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8279E3912FE096D2003FD614 /* Build configuration list for PBXNativeTarget "Jobroom Helper (iOS)" */;
+			buildPhases = (
+				8279E33D2FE096D2003FD614 /* Sources */,
+				8279E33E2FE096D2003FD614 /* Frameworks */,
+				8279E33F2FE096D2003FD614 /* Resources */,
+				8279E3902FE096D2003FD614 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8279E3602FE096D2003FD614 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8279E3422FE096D2003FD614 /* iOS (App) */,
+				8279E3BF2FE09847003FD614 /* Shared (App) */,
+			);
+			name = "Jobroom Helper (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Jobroom Helper (iOS)";
+			productReference = 8279E3412FE096D2003FD614 /* Jobroom Helper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8279E3512FE096D2003FD614 /* Jobroom Helper (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8279E39B2FE096D2003FD614 /* Build configuration list for PBXNativeTarget "Jobroom Helper (macOS)" */;
+			buildPhases = (
+				8279E34E2FE096D2003FD614 /* Sources */,
+				8279E34F2FE096D2003FD614 /* Frameworks */,
+				8279E3502FE096D2003FD614 /* Resources */,
+				8279E39A2FE096D2003FD614 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8279E36A2FE096D2003FD614 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8279E3532FE096D2003FD614 /* macOS (App) */,
+				8279E3BF2FE09847003FD614 /* Shared (App) */,
+			);
+			name = "Jobroom Helper (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Jobroom Helper (macOS)";
+			productReference = 8279E3522FE096D2003FD614 /* Jobroom Helper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8279E35C2FE096D2003FD614 /* Jobroom Helper Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8279E38C2FE096D2003FD614 /* Build configuration list for PBXNativeTarget "Jobroom Helper Extension (iOS)" */;
+			buildPhases = (
+				8279E3592FE096D2003FD614 /* Sources */,
+				8279E35A2FE096D2003FD614 /* Frameworks */,
+				8279E35B2FE096D2003FD614 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8279E3612FE096D2003FD614 /* iOS (Extension) */,
+			);
+			name = "Jobroom Helper Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Jobroom Helper Extension (iOS)";
+			productReference = 8279E35D2FE096D2003FD614 /* Jobroom Helper Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8279E3662FE096D2003FD614 /* Jobroom Helper Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8279E3962FE096D2003FD614 /* Build configuration list for PBXNativeTarget "Jobroom Helper Extension (macOS)" */;
+			buildPhases = (
+				8279E3632FE096D2003FD614 /* Sources */,
+				8279E3642FE096D2003FD614 /* Frameworks */,
+				8279E3652FE096D2003FD614 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8279E36B2FE096D2003FD614 /* macOS (Extension) */,
+			);
+			name = "Jobroom Helper Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Jobroom Helper Extension (macOS)";
+			productReference = 8279E3672FE096D2003FD614 /* Jobroom Helper Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82502E7B2FE016800039048A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					82502E822FE016800039048A = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					82502E9D2FE016810039048A = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					8279E3402FE096D2003FD614 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					8279E3512FE096D2003FD614 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					8279E35C2FE096D2003FD614 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					8279E3662FE096D2003FD614 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+				};
+			};
+			buildConfigurationList = 82502E7E2FE016800039048A /* Build configuration list for PBXProject "JobRoom Helper Safari" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82502E7A2FE016800039048A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 82502E842FE016800039048A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82502E822FE016800039048A /* JobRoom Helper Safari */,
+				82502E9D2FE016810039048A /* JobRoom Helper Safari Extension */,
+				8279E3402FE096D2003FD614 /* Jobroom Helper (iOS) */,
+				8279E3512FE096D2003FD614 /* Jobroom Helper (macOS) */,
+				8279E35C2FE096D2003FD614 /* Jobroom Helper Extension (iOS) */,
+				8279E3662FE096D2003FD614 /* Jobroom Helper Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82502E812FE016800039048A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82502E8D2FE016800039048A /* Icon.png in Resources */,
+				82502E962FE016800039048A /* Main.storyboard in Resources */,
+				82502E912FE016800039048A /* Script.js in Resources */,
+				82502E8B2FE016800039048A /* Main.html in Resources */,
+				82502E982FE016810039048A /* Assets.xcassets in Resources */,
+				82502E8F2FE016800039048A /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82502E9C2FE016810039048A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82502EBB2FE016820039048A /* content.js in Resources */,
+				82502EBA2FE016820039048A /* popup.css in Resources */,
+				82502EB92FE016820039048A /* manifest.json in Resources */,
+				82502EB82FE016820039048A /* README.md in Resources */,
+				82502EB62FE016820039048A /* popup.js in Resources */,
+				82502EB72FE016820039048A /* popup.html in Resources */,
+				82502EC02FE016820039048A /* icons in Resources */,
+				82502EC22FE016820039048A /* _locales in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8279E33F2FE096D2003FD614 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8279E3502FE096D2003FD614 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8279E35B2FE096D2003FD614 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8279E3F42FE09962003FD614 /* popup.js in Resources */,
+				8279E3F52FE09962003FD614 /* manifest.json in Resources */,
+				8279E3F62FE09962003FD614 /* popup.css in Resources */,
+				8279E3F72FE09962003FD614 /* README.md in Resources */,
+				8279E3F82FE09962003FD614 /* popup.html in Resources */,
+				8279E3F92FE09962003FD614 /* content.js in Resources */,
+				8279E4002FE09962003FD614 /* icons in Resources */,
+				8279E4012FE09962003FD614 /* _locales in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8279E3652FE096D2003FD614 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8279E3FA2FE09962003FD614 /* popup.js in Resources */,
+				8279E3FB2FE09962003FD614 /* manifest.json in Resources */,
+				8279E3FC2FE09962003FD614 /* popup.css in Resources */,
+				8279E3FD2FE09962003FD614 /* README.md in Resources */,
+				8279E3FE2FE09962003FD614 /* popup.html in Resources */,
+				8279E3FF2FE09962003FD614 /* content.js in Resources */,
+				8279E4022FE09962003FD614 /* icons in Resources */,
+				8279E4032FE09962003FD614 /* _locales in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82502EBC2FE016820039048A /* Clear Extended Attributes */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Clear Extended Attributes";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -d \"$TARGET_BUILD_DIR/$FULL_PRODUCT_NAME\" ]; then\n  /usr/bin/xattr -cr \"$TARGET_BUILD_DIR/$FULL_PRODUCT_NAME\"\nfi\n";
+		};
+		82502EBD2FE016820039048A /* Clear App Extended Attributes */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Clear App Extended Attributes";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -d \"$TARGET_BUILD_DIR/$FULL_PRODUCT_NAME\" ]; then\n  /usr/bin/xattr -cr \"$TARGET_BUILD_DIR/$FULL_PRODUCT_NAME\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82502E7F2FE016800039048A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82502E932FE016800039048A /* ViewController.swift in Sources */,
+				82502E872FE016800039048A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82502E9A2FE016810039048A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82502EA42FE016810039048A /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8279E33D2FE096D2003FD614 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8279E34E2FE096D2003FD614 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8279E3592FE096D2003FD614 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8279E4072FE09962003FD614 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8279E3632FE096D2003FD614 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8279E4082FE09962003FD614 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82502EA12FE016810039048A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82502E9D2FE016810039048A /* JobRoom Helper Safari Extension */;
+			targetProxy = 82502EA02FE016810039048A /* PBXContainerItemProxy */;
+		};
+		8279E3602FE096D2003FD614 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8279E35C2FE096D2003FD614 /* Jobroom Helper Extension (iOS) */;
+			targetProxy = 8279E35F2FE096D2003FD614 /* PBXContainerItemProxy */;
+		};
+		8279E36A2FE096D2003FD614 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8279E3662FE096D2003FD614 /* Jobroom Helper Extension (macOS) */;
+			targetProxy = 8279E3692FE096D2003FD614 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		82502E892FE016800039048A /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82502E8A2FE016800039048A /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		82502E942FE016800039048A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82502E952FE016800039048A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82502EA62FE016810039048A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82502EA72FE016810039048A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		82502EA92FE016810039048A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KT43342F9W;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "JobRoom Helper Safari Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "JobRoom Helper Safari Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 0.1.10;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.IBMobile.jobroom.helper.JobRoom-Helper-Safari.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		82502EAA2FE016810039048A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KT43342F9W;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "JobRoom Helper Safari Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "JobRoom Helper Safari Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 0.1.10;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.IBMobile.jobroom.helper.JobRoom-Helper-Safari.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		82502EAD2FE016810039048A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KT43342F9W;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "JobRoom Helper Safari/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "JobRoom Helper Safari";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.10;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.IBMobile.jobroom.helper.JobRoom-Helper-Safari";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		82502EAE2FE016810039048A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KT43342F9W;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "JobRoom Helper Safari/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "JobRoom Helper Safari";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.10;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.IBMobile.jobroom.helper.JobRoom-Helper-Safari";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8279E38D2FE096D2003FD614 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = KT43342F9W;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Jobroom Helper Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.IBMobile.jobroom.helper.JobRoom-Helper-Safari.Jobroom-Helper.Extension";
+				PRODUCT_NAME = "Jobroom Helper Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8279E38E2FE096D2003FD614 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = KT43342F9W;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Jobroom Helper Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.IBMobile.jobroom.helper.JobRoom-Helper-Safari.Jobroom-Helper.Extension";
+				PRODUCT_NAME = "Jobroom Helper Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8279E3922FE096D2003FD614 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = KT43342F9W;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Jobroom Helper";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.IBMobile.jobroom.helper.JobRoom-Helper-Safari.Jobroom-Helper";
+				PRODUCT_NAME = "Jobroom Helper";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8279E3932FE096D2003FD614 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = KT43342F9W;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Jobroom Helper";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.IBMobile.jobroom.helper.JobRoom-Helper-Safari.Jobroom-Helper";
+				PRODUCT_NAME = "Jobroom Helper";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8279E3972FE096D2003FD614 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = KT43342F9W;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Jobroom Helper Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.IBMobile.jobroom.helper.JobRoom-Helper-Safari.Jobroom-Helper.Extension";
+				PRODUCT_NAME = "Jobroom Helper Extension";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8279E3982FE096D2003FD614 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = KT43342F9W;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Jobroom Helper Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.IBMobile.jobroom.helper.JobRoom-Helper-Safari.Jobroom-Helper.Extension";
+				PRODUCT_NAME = "Jobroom Helper Extension";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8279E39C2FE096D2003FD614 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_STANDALONE_ICON_BEHAVIOR = all;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = KT43342F9W;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Jobroom Helper";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.IBMobile.jobroom.helper.JobRoom-Helper-Safari.Jobroom-Helper";
+				PRODUCT_NAME = "Jobroom Helper";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8279E39D2FE096D2003FD614 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_STANDALONE_ICON_BEHAVIOR = all;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = KT43342F9W;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Jobroom Helper";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.IBMobile.jobroom.helper.JobRoom-Helper-Safari.Jobroom-Helper";
+				PRODUCT_NAME = "Jobroom Helper";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82502E7E2FE016800039048A /* Build configuration list for PBXProject "JobRoom Helper Safari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82502EA62FE016810039048A /* Debug */,
+				82502EA72FE016810039048A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82502EA82FE016810039048A /* Build configuration list for PBXNativeTarget "JobRoom Helper Safari Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82502EA92FE016810039048A /* Debug */,
+				82502EAA2FE016810039048A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82502EAC2FE016810039048A /* Build configuration list for PBXNativeTarget "JobRoom Helper Safari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82502EAD2FE016810039048A /* Debug */,
+				82502EAE2FE016810039048A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8279E38C2FE096D2003FD614 /* Build configuration list for PBXNativeTarget "Jobroom Helper Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8279E38D2FE096D2003FD614 /* Debug */,
+				8279E38E2FE096D2003FD614 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8279E3912FE096D2003FD614 /* Build configuration list for PBXNativeTarget "Jobroom Helper (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8279E3922FE096D2003FD614 /* Debug */,
+				8279E3932FE096D2003FD614 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8279E3962FE096D2003FD614 /* Build configuration list for PBXNativeTarget "Jobroom Helper Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8279E3972FE096D2003FD614 /* Debug */,
+				8279E3982FE096D2003FD614 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8279E39B2FE096D2003FD614 /* Build configuration list for PBXNativeTarget "Jobroom Helper (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8279E39C2FE096D2003FD614 /* Debug */,
+				8279E39D2FE096D2003FD614 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82502E7B2FE016800039048A /* Project object */;
+}

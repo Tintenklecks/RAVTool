@@ -1,0 +1,57 @@
+{
+  "extName": {
+    "message": "Assistant JobRoom"
+  },
+  "extDescription": {
+    "message": "Lit une offre d’emploi LinkedIn et colle les détails dans les champs Job-Room sans envoyer le formulaire."
+  },
+  "readLinkedInJob": {
+    "message": "Lire l’offre LinkedIn"
+  },
+  "pasteJobRoom": {
+    "message": "Coller dans Job-Room"
+  },
+  "clearData": {
+    "message": "Effacer les données"
+  },
+  "storedJob": {
+    "message": "Offre enregistrée"
+  },
+  "versionLoading": {
+    "message": "Chargement de la version..."
+  },
+  "extensionVersion": {
+    "message": "Extension v$VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "extensionContentVersion": {
+    "message": "Extension v$EXTENSION_VERSION$ / contenu v$CONTENT_VERSION$",
+    "placeholders": {
+      "extension_version": {
+        "content": "$1"
+      },
+      "content_version": {
+        "content": "$2"
+      }
+    }
+  },
+  "noLocalJobData": {
+    "message": "Aucune donnée d’offre locale pour le moment."
+  },
+  "instructionLinkedIn": {
+    "message": "1. Ouvrez la page de détail de l’offre dans LinkedIn."
+  },
+  "instructionRead": {
+    "message": "2. Cliquez sur Lire l’offre LinkedIn."
+  },
+  "instructionJobRoom": {
+    "message": "3. Ouvrez la page Job-Room."
+  },
+  "instructionPaste": {
+    "message": "4. Cliquez sur Coller dans Job-Room."
+  }
+}

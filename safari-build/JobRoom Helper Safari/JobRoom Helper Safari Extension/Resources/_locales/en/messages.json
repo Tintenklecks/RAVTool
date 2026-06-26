@@ -3,10 +3,13 @@
     "message": "JobRoom Helper"
   },
   "extDescription": {
-    "message": "Read a LinkedIn job page and paste the job details into Job-Room fields without submitting."
+    "message": "Read a supported job page and paste the job details into Job-Room fields without submitting."
+  },
+  "readJob": {
+    "message": "READ job"
   },
   "readLinkedInJob": {
-    "message": "READ LinkedIn job"
+    "message": "READ job"
   },
   "pasteJobRoom": {
     "message": "PASTE into Job-Room"
@@ -16,6 +19,9 @@
   },
   "storedJob": {
     "message": "Stored job"
+  },
+  "supportedWebsites": {
+    "message": "Supported websites"
   },
   "versionLoading": {
     "message": "Version loading..."
@@ -42,11 +48,14 @@
   "noLocalJobData": {
     "message": "No local job data yet."
   },
+  "instructionJobSource": {
+    "message": "1. Go to a supported job detail page."
+  },
   "instructionLinkedIn": {
-    "message": "1. Go to the job detail page in LinkedIn."
+    "message": "1. Go to a supported job detail page."
   },
   "instructionRead": {
-    "message": "2. Click READ LinkedIn job."
+    "message": "2. Click READ job."
   },
   "instructionJobRoom": {
     "message": "3. Go to the Job-Room page."

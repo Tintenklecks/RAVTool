@@ -7,25 +7,34 @@ const storedJobLabelEl = document.getElementById("storedJobLabel");
 const jobTitleEl = document.getElementById("jobTitle");
 const jobCompanyEl = document.getElementById("jobCompany");
 const clearDataButton = document.getElementById("clearData");
+const supportedSitesLabelEl = document.getElementById("supportedSitesLabel");
+const supportedSitesListEl = document.getElementById("supportedSitesList");
 const languageButtons = Array.from(document.querySelectorAll("[data-language]"));
 const manifest = chrome.runtime.getManifest();
 const SUPPORTED_LANGUAGES = ["en", "de", "fr", "it"];
+const SUPPORTED_JOB_SITES = [
+  { name: "LinkedIn", host: "linkedin.com" },
+  { name: "jobs.ch", host: "jobs.ch" }
+];
 const FALLBACK_MESSAGES = {
   extName: "JobRoom Helper",
-  readLinkedInJob: "READ LinkedIn job",
+  readJob: "READ job",
+  readLinkedInJob: "READ job",
   pasteJobRoom: "PASTE into Job-Room",
   clearData: "Clear data",
   storedJob: "Stored job",
+  supportedWebsites: "Supported websites",
   extensionVersion: "Extension v$1",
   extensionContentVersion: "Extension v$1 / content v$2",
   noLocalJobData: "No local job data yet.",
-  instructionLinkedIn: "1. Go to the job detail page in LinkedIn.",
-  instructionRead: "2. Click READ LinkedIn job.",
+  instructionJobSource: "1. Go to a supported job detail page.",
+  instructionLinkedIn: "1. Go to a supported job detail page.",
+  instructionRead: "2. Click READ job.",
   instructionJobRoom: "3. Go to the Job-Room page.",
   instructionPaste: "4. Click PASTE into Job-Room."
 };
 const ACTIONS = {
-  read: "readLinkedInV2",
+  read: "readJobV2",
   paste: "pasteJobRoomV2",
   ping: "pingV2"
 };
@@ -80,13 +89,33 @@ async function loadMessages(language) {
 function applyStaticLocalization() {
   document.documentElement.lang = currentLanguage;
   document.title = message("extName");
-  readButton.textContent = message("readLinkedInJob");
+  readButton.textContent = message("readJob");
   pasteButton.textContent = message("pasteJobRoom");
   clearDataButton.textContent = message("clearData");
   storedJobLabelEl.textContent = message("storedJob");
+  supportedSitesLabelEl.textContent = message("supportedWebsites");
+  renderSupportedJobSites();
   for (const button of languageButtons) {
     button.setAttribute("aria-pressed", String(button.dataset.language === currentLanguage));
   }
+}
+
+function renderSupportedJobSites() {
+  supportedSitesListEl.replaceChildren(
+    ...SUPPORTED_JOB_SITES.map((site) => {
+      const item = document.createElement("li");
+      const name = document.createElement("span");
+      const host = document.createElement("span");
+
+      name.className = "supported-site-name";
+      host.className = "supported-site-host";
+      name.textContent = site.name;
+      host.textContent = site.host;
+
+      item.append(name, host);
+      return item;
+    })
+  );
 }
 
 function setVersionText(contentVersion = currentContentVersion) {
@@ -157,7 +186,7 @@ async function showStoredJob() {
   statusEl.textContent = [
     message("noLocalJobData"),
     "",
-    message("instructionLinkedIn"),
+    message("instructionJobSource"),
     message("instructionRead"),
     message("instructionJobRoom"),
     message("instructionPaste")

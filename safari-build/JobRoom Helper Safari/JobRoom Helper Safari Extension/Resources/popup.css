@@ -65,6 +65,44 @@ button:disabled {
   font-size: 12px;
 }
 
+.supported-sites {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #d7dee6;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.supported-sites-label {
+  color: #5d6979;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.supported-sites-list {
+  display: grid;
+  gap: 6px;
+  margin: 7px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.supported-sites-list li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.supported-site-name {
+  font-weight: 700;
+}
+
+.supported-site-host {
+  color: #5d6979;
+  font-size: 12px;
+}
+
 .job-summary {
   display: grid;
   grid-template-columns: minmax(0, 1fr);

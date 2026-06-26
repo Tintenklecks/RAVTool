@@ -3,10 +3,13 @@
     "message": "Assistant JobRoom"
   },
   "extDescription": {
-    "message": "Lit une offre d’emploi LinkedIn et colle les détails dans les champs Job-Room sans envoyer le formulaire."
+    "message": "Lit une offre d’emploi prise en charge et colle les détails dans les champs Job-Room sans envoyer le formulaire."
+  },
+  "readJob": {
+    "message": "Lire l’offre"
   },
   "readLinkedInJob": {
-    "message": "Lire l’offre LinkedIn"
+    "message": "Lire l’offre"
   },
   "pasteJobRoom": {
     "message": "Coller dans Job-Room"
@@ -16,6 +19,9 @@
   },
   "storedJob": {
     "message": "Offre enregistrée"
+  },
+  "supportedWebsites": {
+    "message": "Sites pris en charge"
   },
   "versionLoading": {
     "message": "Chargement de la version..."
@@ -42,11 +48,14 @@
   "noLocalJobData": {
     "message": "Aucune donnée d’offre locale pour le moment."
   },
+  "instructionJobSource": {
+    "message": "1. Ouvrez une page de détail d’offre prise en charge."
+  },
   "instructionLinkedIn": {
-    "message": "1. Ouvrez la page de détail de l’offre dans LinkedIn."
+    "message": "1. Ouvrez une page de détail d’offre prise en charge."
   },
   "instructionRead": {
-    "message": "2. Cliquez sur Lire l’offre LinkedIn."
+    "message": "2. Cliquez sur Lire l’offre."
   },
   "instructionJobRoom": {
     "message": "3. Ouvrez la page Job-Room."

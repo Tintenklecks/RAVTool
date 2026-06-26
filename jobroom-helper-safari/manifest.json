@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "__MSG_extName__",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "default_locale": "en",
   "description": "__MSG_extDescription__",
   "icons": {
@@ -16,6 +16,8 @@
     "storage",
     "https://www.linkedin.com/*",
     "https://*.linkedin.com/*",
+    "https://www.jobs.ch/*",
+    "https://*.jobs.ch/*",
     "https://www.job-room.ch/*",
     "https://*.job-room.ch/*"
   ],

@@ -3,10 +3,13 @@
     "message": "Assistente JobRoom"
   },
   "extDescription": {
-    "message": "Legge un annuncio LinkedIn e incolla i dettagli nei campi Job-Room senza inviare il modulo."
+    "message": "Legge un annuncio supportato e incolla i dettagli nei campi Job-Room senza inviare il modulo."
+  },
+  "readJob": {
+    "message": "Leggi offerta"
   },
   "readLinkedInJob": {
-    "message": "Leggi offerta LinkedIn"
+    "message": "Leggi offerta"
   },
   "pasteJobRoom": {
     "message": "Incolla in Job-Room"
@@ -16,6 +19,9 @@
   },
   "storedJob": {
     "message": "Offerta salvata"
+  },
+  "supportedWebsites": {
+    "message": "Siti supportati"
   },
   "versionLoading": {
     "message": "Caricamento versione..."
@@ -42,11 +48,14 @@
   "noLocalJobData": {
     "message": "Nessun dato locale dell’offerta disponibile."
   },
+  "instructionJobSource": {
+    "message": "1. Vai a una pagina di dettaglio offerta supportata."
+  },
   "instructionLinkedIn": {
-    "message": "1. Vai alla pagina di dettaglio dell’offerta in LinkedIn."
+    "message": "1. Vai a una pagina di dettaglio offerta supportata."
   },
   "instructionRead": {
-    "message": "2. Fai clic su Leggi offerta LinkedIn."
+    "message": "2. Fai clic su Leggi offerta."
   },
   "instructionJobRoom": {
     "message": "3. Vai alla pagina Job-Room."

@@ -1,5 +1,7 @@
 (() => {
-  const CONTENT_SCRIPT_VERSION = "0.1.10";
+  const CONTENT_SCRIPT_VERSION = "0.1.11";
+  const UNSUPPORTED_JOB_PAGE_ERROR =
+    "Keine unterstützte Jobseite erkannt. Wenn diese Plattform aufgenommen werden soll, bitte die Job-URL an raf@puco.de senden.";
   const extensionApi = globalThis.browser || globalThis.chrome;
   const usesPromiseApi = Boolean(globalThis.browser);
 
@@ -22,8 +24,11 @@
       return { ok: true, version: CONTENT_SCRIPT_VERSION };
     }
 
-    if (message.action === "readLinkedInV2" || message.action === "readLinkedIn") {
-      const data = readLinkedInJob();
+    if (message.action === "readJobV2" || message.action === "readLinkedInV2" || message.action === "readLinkedIn") {
+      const data = readJobFromCurrentPlatform();
+      if (!data) {
+        return { ok: false, error: UNSUPPORTED_JOB_PAGE_ERROR };
+      }
       await storageSet({ jobData: data });
       return { ok: true, data };
     }
@@ -57,6 +62,49 @@
     return new Promise((resolve) => {
       extensionApi.storage.local.set(value, resolve);
     });
+  }
+
+  const JOB_SOURCE_PLUGINS = [
+    {
+      id: "linkedin",
+      label: "LinkedIn",
+      matches: (url) => /(^|\.)linkedin\.com$/i.test(url.hostname),
+      read: readLinkedInJob
+    },
+    {
+      id: "jobs-ch",
+      label: "jobs.ch",
+      matches: (url) => /(^|\.)jobs\.ch$/i.test(url.hostname),
+      read: readJobsChJob
+    }
+  ];
+
+  function readJobFromCurrentPlatform() {
+    const plugin = jobSourcePluginForUrl(location.href);
+    if (!plugin) {
+      return null;
+    }
+
+    const job = {
+      ...plugin.read(),
+      source: plugin.id,
+      sourceLabel: plugin.label
+    };
+
+    if (!job.title || !job.company) {
+      return null;
+    }
+
+    return job;
+  }
+
+  function jobSourcePluginForUrl(url) {
+    try {
+      const parsed = new URL(url);
+      return JOB_SOURCE_PLUGINS.find((plugin) => plugin.matches(parsed)) || null;
+    } catch {
+      return null;
+    }
   }
 
   function readLinkedInJob() {
@@ -99,6 +147,51 @@
       location: jobLocation,
       city: cityFromLocation(jobLocation, company),
       url: canonicalJobUrl(location.href),
+      appliedOn: todayIsoDate(),
+      readAt: new Date().toISOString()
+    };
+  }
+
+  function readJobsChJob() {
+    const jobPosting = firstJsonLdNode("JobPosting") || {};
+    const address = firstValue([
+      jobPosting.jobLocation?.address,
+      Array.isArray(jobPosting.jobLocation) ? jobPosting.jobLocation[0]?.address : null
+    ]) || {};
+    const titleParts = parseJobsChDocumentTitle(document.title);
+    const company = cleanCompany(
+      firstValue([
+        jobPosting.hiringOrganization?.name,
+        companyFromJobsChDescription(metaContent('meta[name="description"]')),
+        titleParts.company
+      ])
+    );
+    const locationText = cleanLocation(
+      firstValue([
+        formatPostalAddress(address),
+        firstText([
+          "[data-cy*='location' i]",
+          "[data-testid*='location' i]",
+          "[class*='location' i]"
+        ])
+      ])
+    );
+
+    return {
+      title: firstValue([
+        jobPosting.title,
+        firstText(["h1"]),
+        titleParts.title,
+        metaTitleWithoutSite()
+      ]),
+      company,
+      location: locationText,
+      city: cityFromLocation(locationText, company),
+      url: canonicalJobUrl(firstValue([
+        linkHref('link[rel="canonical"]'),
+        absoluteUrl(metaContent('meta[property="og:url"]')),
+        location.href
+      ])),
       appliedOn: todayIsoDate(),
       readAt: new Date().toISOString()
     };
@@ -358,6 +451,14 @@
     return document.querySelector(selector)?.innerText?.replace(/\s+/g, " ").trim() || "";
   }
 
+  function metaContent(selector) {
+    return document.querySelector(selector)?.getAttribute("content")?.replace(/\s+/g, " ").trim() || "";
+  }
+
+  function linkHref(selector) {
+    return document.querySelector(selector)?.href || document.querySelector(selector)?.getAttribute("href") || "";
+  }
+
   function cleanCompany(value) {
     return value.replace(/\s*\n\s*/g, " ").trim();
   }
@@ -371,6 +472,20 @@
     return firstLinkedInLocationSegment(cleaned);
   }
 
+  function formatPostalAddress(address) {
+    if (!address || typeof address !== "object") {
+      return "";
+    }
+
+    return [
+      [address.postalCode, address.addressLocality].filter(Boolean).join(" "),
+      address.addressRegion,
+      address.addressCountry
+    ]
+      .filter(Boolean)
+      .join(", ");
+  }
+
   function cityFromLocation(value, company = "") {
     const cleaned = cleanLocation(value || "");
     if (!cleaned) {
@@ -379,7 +494,7 @@
 
     const normalizedCompany = normalizeText(company);
     const parts = cleaned
-      .split(/\s*(?:·|-|\||,|\(|\))\s*/)
+      .split(/\s*(?:·|-|\||,|\/|\(|\))\s*/)
       .map((part) => part.trim())
       .filter(Boolean);
 
@@ -387,7 +502,7 @@
       const normalizedPart = normalizeText(part);
       return (
         normalizedPart !== normalizedCompany &&
-        !/(schweiz|switzerland|suisse|remote|hybrid|vor ort|on-site|onsite|full-time|teilzeit|vollzeit|bewerber|applicant)/i.test(part)
+        !/(schweiz|switzerland|suisse|remote|hybrid|smart working|vor ort|on-site|onsite|full-time|teilzeit|vollzeit|bewerber|applicant)/i.test(part)
       );
     });
 
@@ -482,6 +597,77 @@
       title: parts.slice(0, -1).join(" | "),
       company: parts.at(-1) || ""
     };
+  }
+
+  function parseJobsChDocumentTitle(value) {
+    const cleaned = String(value || "").replace(/\s+-\s+jobs\.ch\s*$/i, "").trim();
+    const match = cleaned.match(/^(.*?)\s+-\s+Job Offer at\s+(.+)$/i);
+    if (match) {
+      return {
+        title: match[1].trim(),
+        company: match[2].trim()
+      };
+    }
+
+    return { title: cleaned, company: "" };
+  }
+
+  function metaTitleWithoutSite() {
+    return parseJobsChDocumentTitle(metaContent('meta[property="og:title"]') || document.title).title;
+  }
+
+  function companyFromJobsChDescription(value) {
+    const match = String(value || "").match(/^(.+?)\s+published the job\b/i);
+    return match?.[1]?.trim() || "";
+  }
+
+  function firstJsonLdNode(type) {
+    for (const script of document.querySelectorAll('script[type="application/ld+json"]')) {
+      const nodes = flattenJsonLd(parseJson(script.textContent || ""));
+      const match = nodes.find((node) => jsonLdTypeMatches(node, type));
+      if (match) {
+        return match;
+      }
+    }
+
+    return null;
+  }
+
+  function parseJson(value) {
+    try {
+      return JSON.parse(value);
+    } catch {
+      return null;
+    }
+  }
+
+  function flattenJsonLd(value) {
+    if (!value) {
+      return [];
+    }
+    if (Array.isArray(value)) {
+      return value.flatMap(flattenJsonLd);
+    }
+    if (typeof value === "object") {
+      return [value, ...flattenJsonLd(value["@graph"])];
+    }
+    return [];
+  }
+
+  function jsonLdTypeMatches(node, type) {
+    const nodeType = node?.["@type"];
+    return Array.isArray(nodeType) ? nodeType.includes(type) : nodeType === type;
+  }
+
+  function absoluteUrl(value) {
+    if (!value) {
+      return "";
+    }
+    try {
+      return new URL(value, location.href).toString();
+    } catch {
+      return value;
+    }
   }
 
   function firstEmbeddedMatch(sources, key) {

@@ -1,0 +1,82 @@
+default_platform(:ios)
+
+FASTLANE_DIR = File.expand_path(__dir__)
+APP_IDENTIFIER = "de.IBMobile.jobroom.helper.JobRoom-Helper-Safari"
+APP_STORE_ID = 6780530115
+API_KEY_PATH = ENV.fetch(
+  "APP_STORE_CONNECT_API_KEY_PATH",
+  File.join(FASTLANE_DIR, "api_key.json")
+)
+
+IOS_METADATA_PATH = File.join(FASTLANE_DIR, "metadata", "ios")
+MAC_METADATA_PATH = File.join(FASTLANE_DIR, "metadata", "mac")
+
+def require_api_key
+  return API_KEY_PATH if File.file?(API_KEY_PATH)
+
+  UI.user_error!(
+    "App Store Connect API key not found at #{API_KEY_PATH}. " \
+    "Set APP_STORE_CONNECT_API_KEY_PATH or create fastlane/api_key.json."
+  )
+end
+
+def download_store_metadata(platform:, metadata_path:)
+  sh(
+    "bundle",
+    "exec",
+    "fastlane",
+    "deliver",
+    "download_metadata",
+    "--api_key_path",
+    require_api_key,
+    "--app_identifier",
+    APP_IDENTIFIER,
+    "--app",
+    APP_STORE_ID.to_s,
+    "--platform",
+    platform,
+    "--metadata_path",
+    metadata_path
+  )
+end
+
+def upload_store_metadata(platform:, metadata_path:)
+  UI.user_error!("Metadata directory not found at #{metadata_path}. Run download_metadata first.") unless Dir.exist?(metadata_path)
+
+  upload_to_app_store(
+    api_key_path: require_api_key,
+    app_identifier: APP_IDENTIFIER,
+    app: APP_STORE_ID,
+    platform: platform,
+    metadata_path: metadata_path,
+    skip_binary_upload: true,
+    skip_screenshots: true,
+    skip_metadata: false,
+    force: true,
+    precheck_include_in_app_purchases: false
+  )
+end
+
+platform :ios do
+  desc "Download iOS metadata from App Store Connect"
+  lane :download_metadata do
+    download_store_metadata(platform: "ios", metadata_path: IOS_METADATA_PATH)
+  end
+
+  desc "Upload iOS metadata to App Store Connect"
+  lane :upload_metadata do
+    upload_store_metadata(platform: "ios", metadata_path: IOS_METADATA_PATH)
+  end
+end
+
+platform :mac do
+  desc "Download macOS metadata from App Store Connect"
+  lane :download_metadata do
+    download_store_metadata(platform: "osx", metadata_path: MAC_METADATA_PATH)
+  end
+
+  desc "Upload macOS metadata to App Store Connect"
+  lane :upload_metadata do
+    upload_store_metadata(platform: "osx", metadata_path: MAC_METADATA_PATH)
+  end
+end

@@ -1,0 +1,5 @@
+# Fastlane credentials and generated reports
+fastlane/api_key.json
+fastlane/AuthKey_*.p8
+fastlane/report.xml
+fastlane/Preview.html

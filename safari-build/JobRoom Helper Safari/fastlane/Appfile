@@ -1,0 +1,15 @@
+apple_id("ibmobile@puco.de") # Your Apple Developer Account email address
+
+itc_team_id("118501659") # App Store Connect Team ID
+team_id("KT43342F9W") # Developer Portal Team ID
+
+for_platform :ios do
+  app_identifier("de.IBMobile.jobroom.helper.JobRoom-Helper-Safari")
+end
+
+for_platform :mac do
+  app_identifier("de.IBMobile.jobroom.helper.JobRoom-Helper-Safari")
+end
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
